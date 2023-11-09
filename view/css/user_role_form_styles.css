@@ -1,0 +1,72 @@
+.frm-user-role-change-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-form);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+  }
+  
+  .frm-user-role-change-container .frm-user-role-change {
+    min-width: 15rem;
+    width: min(80% - 2rem, 800px);
+    height: auto;
+  }
+
+  .frm-user-role-change-container .frm-user-role-change .form-label{
+    margin: .5rem;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+  .frm-user-role-change-container .frm-user-role-change .user-role-displayable{
+    background-color: var(--blue-btn-color);
+    border: 0;
+    color: #fff;
+    padding: .2rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .frm-user-role-change-container .frm-user-role-change .user-role-displayable:hover{
+    background-color: var(--blue-focus-color);
+  }
+  
+  .frm-user-role-change-container .frm-user-role-change .btn-user-role-change-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .frm-user-role-change-container .frm-user-role-change .content-container :is(.btn-save-user-role-change,
+  a) {
+    width: 45%;
+    min-width: 7rem;
+    margin: .2rem .3rem;
+  }
+  
+  .frm-user-role-change-container .frm-user-role-change .content-container a .btn-cancel-user-role-change {
+    width: 100%;
+  }
+  
+  /* @media (max-width: 800px) {
+    .frm-user-role-change-container .frm-user-role-change {
+      width: 70%;
+      min-width: 15rem;
+    }
+  } */
+  
+  @media (max-width: 600px) {
+    .frm-user-role-change-container .frm-user-role-change .content-container :is(.btn-save-user-role-change,
+    a) {
+      width: 90%;
+    }
+  }
+  

@@ -1,0 +1,41 @@
+.frm-contact {
+  min-width: 40rem;
+}
+
+.frm-contact .btn-content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.frm-contact .content-container > div{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.frm-contact .content-container input:not(:is([type="submit"], [type="button"])){
+  width: 90%;
+}
+
+.frm-contact .content-container .btn-content-container .btn-send-email {
+  width: 100%;
+  min-width: 7rem;
+  margin: 0.2rem 0.3rem;
+}
+
+@media (max-width: 800px) {
+  .frm-contact {
+    width: 70%;
+    min-width: 15rem;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .frm-contact .content-container .btn-send-email {
+    width: 90%;
+  }
+} */

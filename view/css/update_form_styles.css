@@ -1,0 +1,56 @@
+.frm-update-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue-form);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+}
+
+.frm-update-container .frm-update {
+  /* min-width: 15rem; */
+  width: min(80% - 2rem, 800px);
+}
+
+
+/* .frm-update-container .frm-update .btn-content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+} */
+
+.frm-update .content-container .btn-content-container :is(.btn-save-update,
+a) {
+  width: 45%;
+  min-width: 7rem;
+}
+/* 
+.frm-update .content-container a {
+  width: 45%;
+ 
+} */
+
+.frm-update .content-container .btn-content-container a .btn-cancel-update {
+  width: 100%;
+}
+
+/* @media (max-width: 800px) {
+  .frm-update-container .frm-update {
+    width: 70%;
+    min-width: 15rem;
+  }
+} */
+
+@media (max-width: 600px) {
+  .frm-update-container .frm-update .content-container :is(.btn-save-update,
+  a) {
+    width: 90%;
+  }
+}

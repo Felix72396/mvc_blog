@@ -1,0 +1,49 @@
+:root{
+    --gren-color: rgb(20, 121, 35);
+    --white-color: #fff;
+    --blue-body-background: rgb(23, 106, 122);
+    --blue-header: rgb(12, 74, 86);
+    --blue-h: rgb(18, 97, 113);
+    --blue-form: rgb(18, 97, 113);
+    --blue-form-input-container: rgb(29, 107, 122);
+    /* --blue-form-container: rgb(18, 91, 107); */
+    --blue-content-container: rgb(18, 91, 107);
+    --blue-focus-color: rgb(36, 129, 147);
+    --blue-btn-color: rgb(39, 116, 131);
+    --blue-a-color: rgb(26, 102, 117);
+    --blue-post-container: rgb(18, 97, 113);
+    --blue-post-card-text-content: rgb(29, 108, 124);
+    --blue-post-text-content: rgb(24, 113, 130);
+    --blue-footer:rgb(12, 74, 86);
+    --blue-user-info-container: rgb(11, 68, 80);
+
+    --green-a-color: rgb(26, 117, 96);
+    --green-focus-color: rgb(70, 186, 138);
+    --green-username-container: rgb(118, 185, 118); 
+
+}
+
+.add-green-color{
+    background-color: rgb(54, 131, 54);     
+    /* background-color: rgba(#fff, .8);   */
+    /* background-color:  rgba(black, .8); */
+}
+
+.add-red-color{
+    background-color: red;
+}
+
+.add-orange-color{
+    background-color: orange;
+}
+
+.dark-green-color{
+    background-color: var(--gren-color);
+}
+
+.white-color{
+    background-color: #fff;
+}
+
+
+

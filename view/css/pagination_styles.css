@@ -1,0 +1,115 @@
+.pagination-container {
+    width: 100%;
+    /* min-width: 15rem; */
+    /* height: 10%; */
+    padding: .8rem 0;
+    border-radius: 2rem;
+
+    background-color: rgb(29, 108, 124);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pagination-container :is(.btn-back-container, .btn-forward-container) {
+    width: 6rem;
+    min-width: 3rem;
+    height: 2.5rem;
+    margin: 0 .8rem;
+  }
+
+  .pagination-container :is(.btn-back-container, .btn-forward-container) :is(.btn-back, .btn-forward, .btn-disabled) {   
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: .8rem;
+    padding: .3rem .1rem;
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(39, 116, 131);
+    box-shadow: 0 5px 0px 0px rgba(0, 0, 0, .2);
+    color: #fff;
+    transition: all .4s;
+  }
+
+  .pagination-container :is(.btn-back-container, .btn-forward-container) .btn-disabled{
+    box-shadow: 0 0 0 0;
+    cursor: not-allowed;
+  }
+
+  .pagination-container :is(.btn-back-container, .btn-forward-container) :is(.btn-back, .btn-forward):hover{
+    background-color: rgb(36, 129, 147);
+    box-shadow: 0 6px 0px 0px rgba(0, 0, 0, .5);
+    transition: all .4s;
+  }
+
+  .pagination-container .button-container {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination-container .button-container :is(.btn-pagination, .pressed-button) {
+    width: 2.07rem;
+    height: 1.8rem;
+    margin: 0 1rem;
+    border: 0;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+    background-color: rgb(39, 116, 131);
+    box-shadow: 0 3px 0px 0px rgba(0, 0, 0, .2);
+    color: #fff;
+
+    transition: all .4s;
+  }
+
+  .pagination-container .button-container .pressed-button {
+    background-color: #fff;
+    color: rgb(39, 116, 131);
+    box-shadow: 0 0 0 0;
+    cursor: not-allowed;
+  }
+
+  .pagination-container .button-container .btn-pagination:hover {
+    cursor: pointer;
+    background-color: rgb(36, 129, 147);
+    box-shadow: 0 4px 0px 0px rgba(0, 0, 0, .5);
+
+    transition: all .4s;
+  }
+
+
+
+  @media (max-width: 1550px) {
+    .pagination-container .button-container input[type='button']{
+      margin: .2rem .30rem;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .pagination-container :is(.btn-back-container, .btn-forward-container) {
+      width: 4rem;
+      margin: 0 .4rem;
+    }
+    .pagination-container :is(.btn-back, .btn-forward){
+      font-size: .8rem;
+    }
+
+    .pagination-container div :is(.btn-pagination, .pressed-button){
+      width: 2rem;
+      height: 1.5rem;
+      font-size: .8rem;
+      border-radius: .2rem;
+    }
+  }

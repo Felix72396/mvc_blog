@@ -1,0 +1,11 @@
+.about-us-article{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    font-size: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+    text-align: justify;
+    border-radius: 2rem;
+    line-height: 1.5;
+}

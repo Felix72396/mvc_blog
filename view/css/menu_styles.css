@@ -1,0 +1,244 @@
+header {
+  width: 100%;
+  max-height: 50rem;
+  min-width: 15rem;
+  height: auto;
+  background-color: var(--blue-header);
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  background-image: url(../img/banner.png);
+  background-size: cover;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+header nav .logo {
+  width: 10rem;
+  min-width: 10rem;
+  height: 10rem;
+}
+
+header nav .logo img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+header nav .logo img:hover {
+  box-shadow: 0 1600px 500px 0 #fff;
+  transition: all 0.5s;
+}
+
+header nav .btn-img-bars{
+  display: none;
+}
+
+header nav ul {
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 1rem;
+
+}
+
+header nav ul li {
+  width: 10rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: .2rem;
+  padding: 1rem .5rem;
+}
+
+
+header nav ul li a {
+  background-color: var(--blue-a-color);
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  /* padding: 2rem 3rem; */
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul a:hover {
+  text-decoration: none;
+  transition: all 0.5s;
+
+  background-color: var(--blue-focus-color);
+  box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.user-picture-container {
+  width: 8rem;
+  height: 8rem;
+  margin-left: auto;
+
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+
+.user-picture-container .btn-user-info {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(217, 211, 211);
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 5px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user-picture-container .btn-user-info:hover {
+  box-shadow: 0 8px 0px 0px rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+}
+
+.user-picture-container .btn-user-info .profile-picture {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+}
+
+/*log in and sign up header styles  */
+
+:is(.sign-up-header, .log-in-header) nav .logo {
+  width: 10rem;
+  min-width: 10rem;
+  height: 10rem;
+}
+
+:is(.sign-up-header, .log-in-header)
+  nav
+  :is(.sign-up-a-container, .log-in-a-container) {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav :is(.sign-up-a-container, .log-in-a-container) {
+  height: 100%;
+  padding: 1rem 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 1rem;
+}
+
+/* background-color: var(--green-a-color); */
+
+header nav :is(.sign-up-a-container, .log-in-a-container) a {
+  width: 12rem;
+  background-color: var(--green-a-color);
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  transition: all 1s;
+  box-shadow: 0 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+header nav :is(.sign-up-a-container, .log-in-a-container) a:hover {
+  text-decoration: none;
+  transition: all 0.5s;
+
+  background-color: var(--green-focus-color);
+  box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (max-width: 1110px) {
+  header nav {
+    flex-direction: column;  
+  }
+
+  header nav .logo {
+    margin: 1rem;
+  }
+
+  header nav ul {
+    align-content: center;
+    justify-content: center;
+  }
+
+  header nav .log-in-a-container {
+    margin: 0 auto;
+  }
+
+  .user-container {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    order: -1;
+  }
+
+}
+
+@media (max-width: 600px) {
+  header nav .btn-img-bars{
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+    border: 0;
+    background: none;
+    background-image: url("../img/bars.png");
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    cursor: pointer;
+  }
+  
+  header nav ul{
+    width: 4rem;
+    display: none;
+  }
+
+  header nav ul li {
+    width: 8rem;
+    height: 6rem;
+  }
+
+  header nav ul li a {
+    /* padding: 1.5rem 2.5rem; */
+    font-size: 1rem;
+  }
+}
